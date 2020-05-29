@@ -5,6 +5,7 @@ import time
 import datetime
 
 idletime = 20
+pyautogui.FAILSAFE = False
 
 class GetIdleTime:
     def IdleTime():
