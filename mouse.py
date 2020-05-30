@@ -25,10 +25,9 @@ while True:
     time.sleep(1)
     y = int(pyautogui.position()[1])
     x = int(pyautogui.position()[0])
-    print(pyautogui.position())
     getIdleTime = GetIdleTime
     getIdleTime = int(getIdleTime.IdleTime())
     #print(getIdleTime)
     if getIdleTime > idletime:
-        print(datetime.datetime.now(),"detected no move watchdog activate move mouse",getIdleTime)
+        print(datetime.datetime.now(),"detected no move watchdog activate move mouse","move to" ,pyautogui.position())
         movemosue(x,y)
