@@ -15,7 +15,7 @@ class GetIdleTime:
 def movemosue():
     y = int(pyautogui.position()[1])
     x = int(pyautogui.position()[0])
-    pyautogui.moveTo(x + int(random.randrange(20, 50, 3)), y + 10)
+    pyautogui.moveTo(x + int(random.randint(-100,100)), y+int(random.randint(-100,100)))
     pyautogui.hscroll(1)
 
 while True:
